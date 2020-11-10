@@ -7,17 +7,17 @@ class DataSearch extends SearchDelegate {
   final peliculasProvider = new PeliculasProvider();
 
   final peliculas = [
-    'Spiderman',
-    'Aquaman',
-    'Batman',
+    'Pokemon',
+    'Naruto',
+    'DragoBall',
     'Shazam!',
-    'Ironman',
-    'Capitan America',
+    'Watchmen',
+    'Rick',
     'Superman',
-    'Ironman 2',
-    'Ironman 3',
-    'Ironman 4',
-    'Ironman 5',
+    'Cazasubastas',
+    '3',
+    'Spiderman',
+    'Ben',
   ];
 
   final peliculasRecientes = ['Spiderman', 'Capitan America'];

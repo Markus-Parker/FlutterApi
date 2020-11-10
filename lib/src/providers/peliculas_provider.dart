@@ -40,7 +40,7 @@ class PeliculasProvider {
 
   Future<List<Pelicula>> getEnCines() async {
     final url = Uri.https(
-        _url, '3/tv/airing_today', {'api_key': _apikey, 'language': _language});
+        _url, '3/tv/on_the_air', {'api_key': _apikey, 'language': _language});
 
     return await _procesarRespuesta(url);
   }
@@ -79,7 +79,7 @@ class PeliculasProvider {
   }
 
   Future<List<Pelicula>> buscarPelicula(String query) async {
-    final url = Uri.https(_url, '3/tv/popular',
+    final url = Uri.https(_url, '3/search/tv',
         {'api_key': _apikey, 'language': _language, 'query': query});
 
     return await _procesarRespuesta(url);
